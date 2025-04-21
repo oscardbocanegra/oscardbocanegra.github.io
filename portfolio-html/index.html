@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar David Bocanegra - Backend Developer & AI Enthusiast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">ODB</div>
+        <div class="nav-right">
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <i class="fas fa-sun"></i>
+            </button>
+            <div class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="glitch" data-text="Oscar David Bocanegra C">Oscar David Bocanegra C</h1>
+                <h2>Backend & AI Developer</h2>
+                <p>Passionate about building robust backend solutions and exploring the world of AI</p>
+                <div class="hero-buttons">
+                    <a href="https://github.com/oscardbocanegra" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/oscardavidbocanegracapera/" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-container">
+                    <img src="images/profile.jpg" alt="Oscar David Bocanegra" class="profile-img">
+                    <div class="profile-background"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am a Backend Developer with a strong foundation in computer engineering and a growing passion for artificial intelligence and data science. Throughout my career, I have developed robust backend solutions using Python, Java, and various frameworks while maintaining a keen interest in emerging technologies.</p>
+                <p>My journey in software development has been marked by continuous learning and adaptation. I have experience with frameworks such as Django and FastAPI, and I am proficient in working with SQL databases and cloud technologies like Google Cloud Platform.</p>
+            </div>
+            <div class="about-cards">
+                <div class="card">
+                    <i class="fas fa-server"></i>
+                    <h3>Backend Development</h3>
+                    <p>Building scalable and efficient backend solutions</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-brain"></i>
+                    <h3>AI & Machine Learning</h3>
+                    <p>Exploring the frontiers of artificial intelligence</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-database"></i>
+                    <h3>Data Science</h3>
+                    <p>Analyzing and visualizing complex data</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/voice-assistant.jpg" alt="Voice Assistant Project">
+                </div>
+                <div class="project-content">
+                    <h3>Voice Assistant</h3>
+                    <p>A voice-controlled assistant built with Python, integrating various APIs and natural language processing capabilities.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>NLP</span>
+                        <span>Speech Recognition</span>
+                    </div>
+                    <a href="https://github.com/oscardbocanegra/udemy/tree/main/python_total/projects/dia14" class="btn btn-primary" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/todo-app.jpg" alt="Todo App Project">
+                </div>
+                <div class="project-content">
+                    <h3>To-Do Web App</h3>
+                    <p>A modern task management application with a clean interface and real-time updates.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <a href="https://github.com/oscardbocanegra/udemy/tree/main/python_total/projects/dia16/src/projects/base" class="btn btn-primary" target="_blank">View Project</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="images/food-analysis.jpg" alt="Food Analysis Project">
+                </div>
+                <div class="project-content">
+                    <h3>AI-Powered Food Analysis</h3>
+                    <p>An application that identifies ingredients in food images and generates descriptive menu-like descriptions.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>AI APIs</span>
+                    </div>
+                    <a href="#" class="btn btn-primary">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <h2 class="section-title">Skills & Expertise</h2>
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3>Programming Languages</h3>
+                <div class="skills-list" data-skills='["Python", "Java", "JavaScript"]'></div>
+            </div>
+            <div class="skills-category">
+                <h3>Frameworks & Tools</h3>
+                <div class="skills-list" data-skills='["Django", "FastAPI", "Spring"]'></div>
+            </div>
+            <div class="skills-category">
+                <h3>Databases</h3>
+                <div class="skills-list" data-skills='["SQL", "PostgreSQL"]'></div>
+            </div>
+            <div class="skills-category">
+                <h3>Cloud & DevOps</h3>
+                <div class="skills-list" data-skills='["Google Cloud Platform", "Docker"]'></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <a href="mailto:davidbocanegra@gmail.com">davidbocanegra@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Location</h3>
+                    <p>España</p>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-link"></i>
+                    <h3>Social</h3>
+                    <div class="social-links">
+                        <a href="https://github.com/oscardbocanegra" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/oscardavidbocanegracapera/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" required placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" required placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 Oscar David Bocanegra. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
