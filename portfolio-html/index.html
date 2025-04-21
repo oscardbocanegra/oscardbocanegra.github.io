@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oscar David Bocanegra - Backend Developer & AI Enthusiast</title>
+    <title>Oscar David Bocanegra - Backend & AI Developer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,7 +12,7 @@
     <nav class="navbar">
         <div class="nav-brand">ODB</div>
         <div class="nav-right">
-            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+            <button id="theme-toggle" class="theme-toggle">
                 <i class="fas fa-sun"></i>
             </button>
             <div class="nav-toggle">
@@ -46,7 +46,7 @@
             </div>
             <div class="hero-image">
                 <div class="profile-container">
-                    <img src="images/profile.jpg" alt="Oscar David Bocanegra" class="profile-img">
+                    <img src="images/foto.jpg" alt="Oscar David Bocanegra" class="profile-img">
                     <div class="profile-background"></div>
                 </div>
             </div>
@@ -58,24 +58,24 @@
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
             <div class="about-text">
-                <p>I am a Backend Developer with a strong foundation in computer engineering and a growing passion for artificial intelligence and data science. Throughout my career, I have developed robust backend solutions using Python, Java, and various frameworks while maintaining a keen interest in emerging technologies.</p>
-                <p>My journey in software development has been marked by continuous learning and adaptation. I have experience with frameworks such as Django and FastAPI, and I am proficient in working with SQL databases and cloud technologies like Google Cloud Platform.</p>
+                <p>I am a soon-to-be Computer Engineering graduate with a strong passion for Backend Development and Artificial Intelligence. Throughout my academic journey, I've developed a solid foundation in programming principles and modern technologies, with a particular interest in creating robust backend solutions and exploring AI applications.</p>
+                <p>Currently based in Spain, I've focused on learning and practicing with Python, working with frameworks like Django and FastAPI. I'm enthusiastic about database management, API development, and implementing AI solutions. As I complete my studies, I'm eager to apply my knowledge and continue growing in the field of software development.</p>
             </div>
             <div class="about-cards">
                 <div class="card">
                     <i class="fas fa-server"></i>
                     <h3>Backend Development</h3>
-                    <p>Building scalable and efficient backend solutions</p>
+                    <p>Working with Python, Django, and FastAPI to build server-side applications</p>
                 </div>
                 <div class="card">
                     <i class="fas fa-brain"></i>
-                    <h3>AI & Machine Learning</h3>
-                    <p>Exploring the frontiers of artificial intelligence</p>
+                    <h3>AI Development</h3>
+                    <p>Learning and implementing machine learning and AI technologies</p>
                 </div>
                 <div class="card">
                     <i class="fas fa-database"></i>
-                    <h3>Data Science</h3>
-                    <p>Analyzing and visualizing complex data</p>
+                    <h3>Database Management</h3>
+                    <p>Working with PostgreSQL and SQL databases</p>
                 </div>
             </div>
         </div>
@@ -86,9 +86,18 @@
         <h2 class="section-title">Featured Projects</h2>
         <div class="project-grid">
             <div class="project-card">
-                <div class="project-image">
-                    <img src="images/voice-assistant.jpg" alt="Voice Assistant Project">
+                <div class="project-content">
+                    <h3>Machine Learning Projects</h3>
+                    <p>A collection of machine learning projects including data cleaning, exploratory data analysis (EDA), and model implementation.</p>
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Machine Learning</span>
+                        <span>Data Analysis</span>
+                    </div>
+                    <a href="https://github.com/oscardbocanegra/projects/tree/main/python/machine_learning" class="btn btn-primary" target="_blank">View Project</a>
                 </div>
+            </div>
+            <div class="project-card">
                 <div class="project-content">
                     <h3>Voice Assistant</h3>
                     <p>A voice-controlled assistant built with Python, integrating various APIs and natural language processing capabilities.</p>
@@ -101,9 +110,6 @@
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-image">
-                    <img src="images/todo-app.jpg" alt="Todo App Project">
-                </div>
                 <div class="project-content">
                     <h3>To-Do Web App</h3>
                     <p>A modern task management application with a clean interface and real-time updates.</p>
@@ -112,13 +118,10 @@
                         <span>Django</span>
                         <span>PostgreSQL</span>
                     </div>
-                    <a href="https://github.com/oscardbocanegra/udemy/tree/main/python_total/projects/dia16/src/projects/base" class="btn btn-primary" target="_blank">View Project</a>
+                    <a href="https://github.com/oscardbocanegra/projects/tree/main/python/to-do_list" class="btn btn-primary" target="_blank">View Project</a>
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-image">
-                    <img src="images/food-analysis.jpg" alt="Food Analysis Project">
-                </div>
                 <div class="project-content">
                     <h3>AI-Powered Food Analysis</h3>
                     <p>An application that identifies ingredients in food images and generates descriptive menu-like descriptions.</p>
@@ -127,7 +130,6 @@
                         <span>FastAPI</span>
                         <span>AI APIs</span>
                     </div>
-                    <a href="#" class="btn btn-primary">View Project</a>
                 </div>
             </div>
         </div>
@@ -135,23 +137,117 @@
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
-        <h2 class="section-title">Skills & Expertise</h2>
+        <h2 class="section-title">Skills & Tech Stack</h2>
         <div class="skills-container">
             <div class="skills-category">
                 <h3>Programming Languages</h3>
-                <div class="skills-list" data-skills='["Python", "Java", "JavaScript"]'></div>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Python</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Java</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="skills-category">
-                <h3>Frameworks & Tools</h3>
-                <div class="skills-list" data-skills='["Django", "FastAPI", "Spring"]'></div>
+                <h3>Frameworks & Libraries</h3>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Django</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>FastAPI</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>React.js</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Next.js</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="skills-category">
-                <h3>Databases</h3>
-                <div class="skills-list" data-skills='["SQL", "PostgreSQL"]'></div>
+                <h3>Databases & Tools</h3>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>PostgreSQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>SQL</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Git - GitHub</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>GCP</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="skills-category">
-                <h3>Cloud & DevOps</h3>
-                <div class="skills-list" data-skills='["Google Cloud Platform", "Docker"]'></div>
+                <h3>AI & Data Science</h3>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>TensorFlow</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Scikit-learn</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>Pandas</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>NumPy</span>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span>GCP - Vertex</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -164,34 +260,35 @@
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
                     <h3>Email</h3>
-                    <a href="mailto:davidbocanegra@gmail.com">davidbocanegra@gmail.com</a>
+                    <a href="mailto:davidbocanegra@gmail.com">davidbocanegrac@gmail.com</a>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-map-marker-alt"></i>
                     <h3>Location</h3>
-                    <p>España</p>
+                    <p>Colombia</p>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-link"></i>
-                    <h3>Social</h3>
+                    <h3>Connect</h3>
                     <div class="social-links">
-                        <a href="https://github.com/oscardbocanegra" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/oscardavidbocanegracapera/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/oscardbocanegra" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/oscardavidbocanegracapera/" target="_blank" title="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-            <form id="contact-form" class="contact-form">
-                <div class="form-group">
-                    <input type="text" id="name" name="name" required placeholder="Your Name">
+            <div class="contact-text">
+                <h3>Let's Work Together</h3>
+                <p>I'm currently looking for new opportunities in Backend Development and AI. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
+                <div class="contact-cta">
+                    <a href="https://www.linkedin.com/in/oscardavidbocanegracapera/" class="btn btn-secondary" target="_blank">
+                        <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                    </a>
                 </div>
-                <div class="form-group">
-                    <input type="email" id="email" name="email" required placeholder="Your Email">
-                </div>
-                <div class="form-group">
-                    <textarea id="message" name="message" required placeholder="Your Message"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+            </div>
         </div>
     </section>
 
