@@ -50,6 +50,3 @@ To view the website locally:
 - Add or modify interactions in `js/main.js`
 - Add your profile picture to `images/foto.jpg`
 
-## License
-
-MIT License 
