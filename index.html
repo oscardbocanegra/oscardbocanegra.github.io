@@ -1,301 +1,115 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oscar David Bocanegra - Backend & AI Developer</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portafolio de Oscar David Bocanegra, ingeniero de datos y machine learning especializado en backend, Document AI y soluciones cloud.">
+  <meta name="theme-color" content="#0b1118">
+  <meta property="og:title" content="Oscar David Bocanegra | Data, ML & Backend Engineer">
+  <meta property="og:description" content="Soluciones de datos, machine learning, Document AI y APIs listas para producción.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/portada_2.png">
+  <title>Oscar David Bocanegra | Data, ML & Backend Engineer</title>
+  <link rel="icon" href="images/portada_2.png">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-brand">oscardbocanegra</div>
-        <div class="nav-right">
-            <button id="theme-toggle" class="theme-toggle">
-                <i class="fas fa-sun"></i>
-            </button>
-            <div class="nav-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <a class="skip-link" href="#main" data-i18n="skip">Saltar al contenido</a>
+  <header class="site-header" id="top">
+    <nav class="navbar shell" aria-label="Navegación principal">
+      <a class="brand" href="#top"><span class="brand-mark">OB</span><span>Oscar Bocanegra</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-panel"><span></span><span></span><span></span></button>
+      <div class="nav-panel" id="nav-panel">
         <ul class="nav-menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <li><a href="#about" data-i18n="navAbout">Perfil</a></li>
+          <li><a href="#experience" data-i18n="navExperience">Experiencia</a></li>
+          <li><a href="#projects" data-i18n="navProjects">Proyectos</a></li>
+          <li><a href="#skills" data-i18n="navSkills">Stack</a></li>
+          <li><a href="#contact" data-i18n="navContact">Contacto</a></li>
         </ul>
+        <div class="nav-actions">
+          <button class="control language-toggle" type="button" aria-label="Change language"><b>ES</b> / <span>EN</span></button>
+          <button class="control theme-toggle" type="button" aria-label="Cambiar tema"><span>☼</span></button>
+        </div>
+      </div>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="glitch" data-text="oscardbocanegra">oscardbocanegra</h1>
-                <h2>Backend & AI Developer</h2>
-                <p>Passionate about building robust backend solutions and exploring the world of AI</p>
-                <div class="hero-buttons">
-                    <a href="https://github.com/oscardbocanegra" class="btn btn-primary" target="_blank">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                    <a href="https://www.linkedin.com/in/oscardavidbocanegracapera/" class="btn btn-secondary" target="_blank">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="profile-container">
-                    <img src="images/foto.jpg" alt="Oscar David Bocanegra" class="profile-img">
-                    <div class="profile-background"></div>
-                </div>
-            </div>
+  <main id="main">
+    <section class="hero shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><i></i><span data-i18n="availability">Disponible para retos en datos, ML y backend</span></p>
+        <h1>Oscar David<br><span>Bocanegra Capera</span></h1>
+        <p class="hero-role">Data & Machine Learning Engineer <em>·</em> Backend <em>·</em> Document AI</p>
+        <p class="hero-summary" data-i18n="heroSummary">Convierto datos complejos en sistemas confiables: desde pipelines y modelos de machine learning hasta APIs y soluciones de procesamiento documental desplegadas en la nube.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects"><span data-i18n="seeWork">Ver mi trabajo</span><span>↘</span></a>
+          <a class="button" href="https://www.linkedin.com/in/oscardavidbocanegracapera/" target="_blank" rel="noreferrer"><span>LinkedIn</span><span>↗</span></a>
         </div>
+        <div class="hero-links"><a href="https://github.com/oscardbocanegra" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/oscardavidbocanegracapera/" target="_blank" rel="noreferrer">LinkedIn ↗</a><span data-i18n="location">Colombia · Trabajo remoto</span></div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="portrait interactive-card"><img src="images/portada_2.png" alt="Retrato de Oscar David Bocanegra" width="800" height="800"><p><span data-i18n="portrait">Ingeniería con propósito</span><b>Data → Insight → Product</b></p></div>
+        <div class="code-card"><span>01</span><code>extract(document)</code><span>02</span><code>validate(data)</code><span>03</span><code>deploy(model)</code></div>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>I am a soon-to-be Computer Engineering graduate with a strong passion for Backend Development and Artificial Intelligence. Throughout my academic journey, I've developed a solid foundation in programming principles and modern technologies, with a particular interest in creating robust backend solutions and exploring AI applications.</p>
-                <p>Currently based in Spain, I've focused on learning and practicing with Python, working with frameworks like Django and FastAPI. I'm enthusiastic about database management, API development, and implementing AI solutions. As I complete my studies, I'm eager to apply my knowledge and continue growing in the field of software development.</p>
-            </div>
-            <div class="about-cards">
-                <div class="card">
-                    <i class="fas fa-server"></i>
-                    <h3>Backend Development</h3>
-                    <p>Working with Python, Django, and FastAPI to build server-side applications</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-brain"></i>
-                    <h3>AI Development</h3>
-                    <p>Learning and implementing machine learning and AI technologies</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-database"></i>
-                    <h3>Database Management</h3>
-                    <p>Working with PostgreSQL and SQL databases</p>
-                </div>
-            </div>
+    <div class="ticker"><div><span>Machine Learning</span>✦<span>Document AI</span>✦<span>Backend APIs</span>✦<span>Data Engineering</span>✦<span>Cloud & MLOps</span>✦<span>Machine Learning</span>✦<span>Document AI</span>✦<span>Backend APIs</span></div></div>
+
+    <section class="section shell" id="about">
+      <header class="section-heading reveal"><p>01 / <span data-i18n="profileLabel">PERFIL</span></p><h2 data-i18n="aboutTitle">Ingeniería que conecta datos, modelos y producto.</h2></header>
+      <div class="about-grid">
+        <div class="about-copy reveal"><p data-i18n="aboutOne">Soy Ingeniero Informático con formación de posgrado en analítica de datos. Construyo soluciones de datos y machine learning de extremo a extremo: exploro el problema, diseño el flujo, desarrollo el servicio y lo llevo a producción.</p><p data-i18n="aboutTwo">He trabajado con procesamiento inteligente de documentos para servicios financieros, pipelines multimodales con Gemini y Vertex AI, microservicios en FastAPI y despliegues en Google Cloud.</p></div>
+        <div class="principles reveal">
+          <article><span>01</span><div><h3 data-i18n="p1t">Calidad desde el dato</h3><p data-i18n="p1x">Validación, trazabilidad y análisis antes de modelar.</p></div></article>
+          <article><span>02</span><div><h3 data-i18n="p2t">Backend para producción</h3><p data-i18n="p2x">APIs observables, seguras y preparadas para escalar.</p></div></article>
+          <article><span>03</span><div><h3 data-i18n="p3t">IA con contexto de negocio</h3><p data-i18n="p3x">Modelos al servicio de decisiones y procesos reales.</p></div></article>
         </div>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <h2 class="section-title">Featured Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <div class="project-content">
-                    <h3>Machine Learning Projects</h3>
-                    <p>A collection of machine learning projects including data cleaning, exploratory data analysis (EDA), and model implementation.</p>
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>Machine Learning</span>
-                        <span>Data Analysis</span>
-                    </div>
-                    <a href="https://github.com/oscardbocanegra/projects/tree/main/python/machine_learning" class="btn btn-primary" target="_blank">View Project</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-content">
-                    <h3>Voice Assistant</h3>
-                    <p>A voice-controlled assistant built with Python, integrating various APIs and natural language processing capabilities.</p>
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>NLP</span>
-                        <span>Speech Recognition</span>
-                    </div>
-                    <a href="https://github.com/oscardbocanegra/udemy/tree/main/python_total/projects/dia14" class="btn btn-primary" target="_blank">View Project</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-content">
-                    <h3>To-Do Web App</h3>
-                    <p>A modern task management application with a clean interface and real-time updates.</p>
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>Django</span>
-                        <span>PostgreSQL</span>
-                    </div>
-                    <a href="https://github.com/oscardbocanegra/projects/tree/main/python/to-do_list" class="btn btn-primary" target="_blank">View Project</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-content">
-                    <h3>AI-Powered Food Analysis</h3>
-                    <p>An application that identifies ingredients in food images and generates descriptive menu-like descriptions.</p>
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>FastAPI</span>
-                        <span>AI APIs</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="section contrast" id="experience"><div class="shell">
+      <header class="section-heading reveal"><p>02 / <span data-i18n="experienceLabel">EXPERIENCIA</span></p><h2 data-i18n="experienceTitle">Experiencia aplicada a sistemas reales.</h2></header>
+      <div class="timeline">
+        <article class="timeline-item reveal"><div class="timeline-meta"><span data-i18n="current">2026 — Actualidad</span><span>Colombia</span></div><div><p class="company">Inetum <span>· Proyecto BBVA</span></p><h3 data-i18n="inetumRole">Data & Machine Learning Engineer — Consultor asignado a BBVA</h3><p data-i18n="inetumText">Desarrollo de soluciones de procesamiento documental con Google Cloud Document AI; análisis de previsión de efectivo y diagnóstico de pipelines con Python, PySpark, SQL y AWS EMR para mejorar la calidad de datos.</p><div class="tags"><span>Document AI</span><span>Python</span><span>PySpark</span><span>SQL</span><span>AWS EMR</span></div></div></article>
+        <article class="timeline-item reveal"><div class="timeline-meta"><span>2024 — 2026</span><span>North Carolina, USA</span></div><div><p class="company">ShapYA</p><h3>Data & ML / Backend Engineer</h3><p data-i18n="shapyaText">Diseño de un pipeline multimodal visión-lenguaje con Gemini sobre Vertex AI y microservicios de inferencia con FastAPI, Docker y Cloud Run, incluyendo validación, rate limiting y control de acceso.</p><div class="tags"><span>Vertex AI</span><span>Gemini</span><span>FastAPI</span><span>Docker</span><span>Cloud Run</span></div></div></article>
+      </div>
+    </div></section>
+
+    <section class="section shell" id="projects">
+      <header class="section-heading reveal"><p>03 / <span data-i18n="projectsLabel">PROYECTOS</span></p><h2 data-i18n="projectsTitle">Trabajo seleccionado.</h2></header>
+      <div class="projects-grid">
+        <article class="project featured reveal"><span>01</span><div><small>RAG · AI Engineering · Backend</small><h3 data-i18n="ragTitle">BBVA RAG Assistant</h3><p data-i18n="ragText">Asistente RAG para consultar contenido institucional mediante recuperación semántica, embeddings locales, base vectorial y memoria conversacional. Incluye API, dashboard, métricas, pruebas y ejecución con Docker Compose.</p><div class="tags"><span>FastAPI</span><span>Qdrant</span><span>Ollama</span><span>PostgreSQL</span><span>Streamlit</span></div><a href="https://github.com/oscardbocanegra/bbva-rag-assistant" target="_blank" rel="noreferrer"><span data-i18n="repoCta">Ver repositorio</span> ↗</a></div></article>
+        <article class="project reveal"><span>02</span><div><small>Python Package · Data Analytics</small><h3 data-i18n="edaTitle">EDA Library</h3><p data-i18n="edaText">Paquete de Python orientado a automatizar análisis exploratorios de datos y acelerar la inspección inicial de datasets con Pandas y NumPy.</p><div class="tags"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Packaging</span></div><a href="https://github.com/oscardbocanegra/projects/tree/main/python-projects/eda-library" target="_blank" rel="noreferrer"><span data-i18n="repoCta">Ver repositorio</span> ↗</a></div></article>
+        <article class="project reveal"><span>03</span><div><small>Django · Web Application</small><h3 data-i18n="todoTitle">To-Do App</h3><p data-i18n="todoText">Aplicación web de gestión de tareas con operaciones CRUD, construida para practicar arquitectura backend, persistencia de datos e interfaces web con Django.</p><div class="tags"><span>Django</span><span>Python</span><span>PostgreSQL</span><span>CRUD</span></div><a href="https://github.com/oscardbocanegra/projects/tree/main/python-projects/todo-app" target="_blank" rel="noreferrer"><span data-i18n="repoCta">Ver repositorio</span> ↗</a></div></article>
+      </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <h2 class="section-title">Skills & Tech Stack</h2>
-        <div class="skills-container">
-            <div class="skills-category">
-                <h3>Programming Languages</h3>
-                <div class="skills-list">
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Python</span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>JavaScript</span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Java</span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>CSS</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="skills-category">
-                <h3>Frameworks & Libraries</h3>
-                <div class="skills-list">
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Django</span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>FastAPI</span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>React.js</span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Next.js</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="skills-category">
-                <h3>Databases & Tools</h3>
-                <div class="skills-list">
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>PostgreSQL</span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>SQL</span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Git - GitHub</span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Docker</span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>GCP</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="skills-category">
-                <h3>AI & Data Science</h3>
-                <div class="skills-list">
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>TensorFlow</span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Scikit-learn</span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>Pandas</span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>NumPy</span>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-header">
-                            <span>GCP - Vertex</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="section skills-section" id="skills"><div class="shell">
+      <header class="section-heading reveal"><p>04 / <span>STACK</span></p><h2 data-i18n="skillsTitle">Herramientas para llevar ideas a producción.</h2></header>
+      <div class="skills-grid">
+        <article class="skill reveal"><span>01</span><h3 data-i18n="languagesTitle">Lenguajes</h3><div class="skill-pills"><span>Python</span><span>SQL</span><span>Java</span><span>JavaScript</span></div></article>
+        <article class="skill reveal"><span>02</span><h3 data-i18n="dataMl">Datos & ML</h3><div class="skill-pills"><span>PySpark</span><span>Pandas</span><span>NumPy</span><span>scikit-learn</span><span>TensorFlow</span><span>Airflow</span></div></article>
+        <article class="skill reveal"><span>03</span><h3 data-i18n="backendTitle">Backend & Frameworks</h3><div class="skill-pills"><span>FastAPI</span><span>Django</span><span>Flask</span><span>Spring</span><span>REST APIs</span><span>PostgreSQL</span></div></article>
+        <article class="skill reveal"><span>04</span><h3 data-i18n="aiTitle">IA & Documentos</h3><div class="skill-pills"><span>Document AI</span><span>OCR</span><span>Vertex AI</span><span>Gemini</span><span>Qdrant</span><span>Ollama</span><span>NLP</span></div></article>
+        <article class="skill reveal"><span>05</span><h3 data-i18n="cloudTitle">Cloud & DevOps</h3><div class="skill-pills"><span>Google Cloud</span><span>AWS EMR</span><span>Cloud Run</span><span>Docker</span><span>Git</span><span>CI/CD</span></div></article>
+      </div>
+    </div></section>
+
+    <section class="section shell education">
+      <header class="section-heading reveal"><p>05 / <span data-i18n="educationLabel">FORMACIÓN</span></p><h2 data-i18n="educationTitle">Base técnica, aprendizaje continuo.</h2></header>
+      <div class="education-list">
+        <article class="reveal"><span>2022 — 2026</span><div><h3 data-i18n="degree">Grado en Ingeniería Informática</h3><p>Universidad Internacional de La Rioja · España</p></div></article>
+        <article class="reveal"><span>2025</span><div><h3 data-i18n="certificate">Certificado de Posgrado en Analítica de Datos Empresariales</h3><p>Universidad Internacional de La Rioja · España</p></div></article>
+        <article class="reveal"><span data-i18n="ongoing">En curso</span><div><h3 data-i18n="continuing">Formación continua</h3><p>Data Science, ML, Backend, DevOps & GCP · Platzi & Udemy</p></div></article>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2 class="section-title">Get in Touch</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Email</h3>
-                    <a href="mailto:davidbocanegra@gmail.com">davidbocanegrac@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <h3>Location</h3>
-                    <p>Colombia</p>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-link"></i>
-                    <h3>Connect</h3>
-                    <div class="social-links">
-                        <a href="https://github.com/oscardbocanegra" target="_blank" title="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/oscardavidbocanegracapera/" target="_blank" title="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="contact-text">
-                <h3>Let's Work Together</h3>
-                <p>I'm currently looking for new opportunities in Backend Development and AI. Whether you have a question or just want to say hi, I'll try my best to get back to you!</p>
-                <div class="contact-cta">
-                    <a href="https://www.linkedin.com/in/oscardavidbocanegracapera/" class="btn btn-secondary" target="_blank">
-                        <i class="fab fa-linkedin"></i> Connect on LinkedIn
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section class="contact section" id="contact"><div class="shell reveal"><p>06 / <span data-i18n="contactLabel">CONTACTO</span></p><h2 data-i18n="contactTitle">Construyamos algo que convierta datos en valor.</h2><p data-i18n="contactText">Estoy abierto a conversar sobre ingeniería de datos, machine learning, backend y soluciones de IA aplicadas.</p><div><a class="button contact-button" href="mailto:davidbocanegrac@gmail.com"><span data-i18n="writeMe">Escríbeme</span> ↗</a><a href="mailto:davidbocanegrac@gmail.com">davidbocanegrac@gmail.com</a></div></div></section>
+  </main>
 
-    <footer class="footer">
-        <p>&copy; 2024 oscardbocanegra. All rights reserved.</p>
-    </footer>
-
-    <script src="js/main.js"></script>
+  <footer class="footer shell"><p>© <span id="year"></span> Oscar David Bocanegra</p><div><a href="https://github.com/oscardbocanegra" target="_blank" rel="noreferrer">GitHub</a><a href="https://www.linkedin.com/in/oscardavidbocanegracapera/" target="_blank" rel="noreferrer">LinkedIn</a><a href="#top" data-i18n="backTop">Volver arriba ↑</a></div></footer>
+  <script src="js/main.js"></script>
 </body>
-</html> 
+</html>
